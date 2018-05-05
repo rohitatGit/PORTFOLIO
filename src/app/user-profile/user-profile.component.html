@@ -1,3 +1,20 @@
-<p>
-  user-profile works!
-</p>
+<div class="cantainer">
+  <div class="row">
+    <div class="col-md-12 parent-div-userskill">
+    </div>
+    <div class="my-bio" [@changeState]="changestate">
+      <h1  class="fadeInDown">Hi ! Myself Rohit</h1>
+      <h2  class="slideInUp">Full stack javascript developer</h2>
+    </div>
+    <div class="down-arrow">
+        <a  [ngx-scroll-to]="'#skills'" (click)="animateSquare('animated')">
+          <span>
+            <i class="fa fa-arrow-circle-down" style="color:white;font-size:56px;"></i>
+          </span>
+        </a>
+    </div>
+  </div>
+  <div class="my-profile">
+    <app-skills [animateInput] = "animations"></app-skills>
+  </div>
+</div>

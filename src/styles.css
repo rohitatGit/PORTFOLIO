@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+.my-bio{
+    position: absolute;
+    right: 15%;
+    left: 15%;
+    bottom: 50%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    }
+    
+    .my-bio{
+        -webkit-animation-name: my-bio;
+    animation-name: my-bio;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    }
+
+    @keyframes my-bio {
+        from {opacity:0;}
+        to {opacity:1;}
+    }
+
+    .section {
+        position: relative;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        text-align: center;
+        scroll-behavior: smooth;    /* <----- THE SECRET ---- */
+    }
+
+    

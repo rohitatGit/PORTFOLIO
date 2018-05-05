@@ -1,20 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
+import {  BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UserProfileModule } from './user-profile/user-profile.module'
 import { AppComponent } from './app.component';
-import { UserProfileComponent } from './user-profile/user-profile.component';
-import { SkillsComponent } from './skills/skills.component';
+
+
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    UserProfileComponent,
-    SkillsComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule
+    UserProfileModule,
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
